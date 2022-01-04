@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 namespace JwtToDo.Controllers
-{  [Route("api/[controller]")] // api/todo
+{
+[Route("api/[controller]")] // api/todo
 [ApiController]
 [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 public class TodoController : ControllerBase
